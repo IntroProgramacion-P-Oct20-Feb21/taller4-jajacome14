@@ -29,6 +29,8 @@ public class EjemploDos {
         double costoMetro;
         // 6. costoTerreno, d[0, n]
         double costoTerreno;
+        // pido el nombre del comprador
+        String comprador;
         
         // pido datos por teclado - entradas
         // 7. Escribir "Ingrese el largo del terreno"
@@ -43,6 +45,12 @@ public class EjemploDos {
         System.out.println("Ingrese el costo del m2 del terreno");
         // 12. Leer costoMetro
         costoMetro = entrada.nextDouble();
+        
+        // Nombre del comprador
+        System.out.println("Ingrese el nombre del comprador");
+        // 12. Leer costoMetro
+        entrada.nextLine();
+        comprador = entrada.nextLine();
 
         // proceso
         // 13. area <-- largo * ancho
@@ -52,6 +60,6 @@ public class EjemploDos {
         
         // salida
         // 15. Escribir "El costo del terreno es :" + costoTerreno
-        System.out.printf("El costo del terreno es : %.2f\n", costoTerreno);
+        System.out.printf("El costo del terreno es : %.2f \ny el comprador es: %s\n ", costoTerreno, comprador);
     } // 16. Fin
 }
